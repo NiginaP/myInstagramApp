@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="371dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="66dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/ivBlank"
+        android:layout_width="match_parent"
+        android:layout_height="371dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="66dp"
+        android:background="@mipmap/background_color"
+        android:visibility="visible"
+        app:srcCompat="@mipmap/blank_logo"
+        tools:srcCompat="@mipmap/blank_logo" />
+
+    <Button
+        android:id="@+id/btnTakePicture"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ivImage"
+        android:layout_marginTop="1dp"
+        android:background="@mipmap/background_color"
+        android:fontFamily="sans-serif"
+        android:text="Take Picture"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#E2FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        style="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_above="@+id/btnSubmit"
+        android:layout_below="@+id/btnTakePicture"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:ems="10"
+        android:hint="Description..."
+        android:inputType="none"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BCFFFFFF"
+        />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@mipmap/background_color"
+        android:fontFamily="sans-serif"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="12dp"
+        android:background="@mipmap/logout" />
+</RelativeLayout>
